@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ეს ვერსია იქნებოდა ლექციის მიხედვით რომ მივყოლოდი */
+/* body {
+    background-color: #D5E1EF;
+    width: 1440px;
+    height: 800px;
+} */
+
+/* div {
+    width: 320px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.0477);
+    padding: 16px 16px 40px;
+    margin: 250px auto 0;
+} */
+
+
+/* ეს ვერსია არის გაუმჯობესებული, რაც მეხმარება რომ დივი გავაცენტრო */
+body {
+    background-color: #D5E1EF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+div {
+    width: 90%;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.0477);
+    padding: 16px 16px 40px;
+    text-align: center;
+}
+
+div img {
+    width: 288px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgba(31, 49, 79, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+p {
+    color: rgba(125, 136, 158, 1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.19px;
+    width: 256px;
+    margin: 16px auto 0;
+}
+
+@media (max-width: 375px) {
+    div {
+        padding: 16px 12px 32px;
+    }
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    div img {
+        width: 100%;
+    }
+}
