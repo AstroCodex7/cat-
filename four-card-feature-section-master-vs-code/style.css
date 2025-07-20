@@ -1,0 +1,75 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --gray-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+  --font: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--light-gray);
+  color: var(--gray-blue);
+  font-size: 15px;
+}
+
+.main-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro h1 {
+  font-weight: 200;
+  color: var(--dark-blue);
+}
+
+.intro h1 span {
+  font-weight: 600;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.card img {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.card--cyan { border-top: 4px solid var(--cyan); }
+.card--red { border-top: 4px solid var(--red); }
+.card--orange { border-top: 4px solid var(--orange); }
+.card--blue { border-top: 4px solid var(--blue); }
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      ". card2 ."
+      "card1 card2 card3"
+      ". card4 .";
+  }
+
+  .card--cyan { grid-area: card1; }
+  .card--red { grid-area: card2; }
+  .card--orange { grid-area: card3; }
+  .card--blue { grid-area: card4; }
+}
