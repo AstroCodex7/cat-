@@ -1,0 +1,353 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ /* General Reset and Base Styles */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+     font-size: 16px;
+ }
+
+ body.page {
+     font-family: 'Segoe UI', 'Arial', sans-serif;
+     background: #f8f9fa;
+     color: #222;
+     min-height: 100vh;
+     line-height: 1.6;
+ }
+
+ /* Navbar */
+ header {
+     background: #fff;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+     position: sticky;
+     top: 0;
+     z-index: 100;
+ }
+
+ .navbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 1rem 2rem;
+ }
+
+ .logo img.myLogo {
+     border-radius: 50%;
+     border: 2px solid #e0e0e0;
+     background: #fff;
+ }
+
+ .nav-menu {
+     display: flex;
+     gap: 2rem;
+     list-style: none;
+ }
+
+ .nav-menu li a {
+     text-decoration: none;
+     color: #222;
+     font-weight: 500;
+     transition: color 0.2s;
+ }
+
+ .nav-menu li a:hover {
+     color: #007bff;
+ }
+
+ /* Hero Section */
+ .hero-intro {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 2.5rem;
+     padding: 4rem 2rem 2rem 2rem;
+     background: #fff;
+     flex-wrap: wrap;
+ }
+
+ .avatar-box img {
+     width: 140px;
+     height: 140px;
+     border-radius: 50%;
+     border: 3px solid #007bff;
+     object-fit: cover;
+     background: #f0f0f0;
+ }
+
+ .text-box {
+     max-width: 500px;
+ }
+
+ .text-box p {
+     font-size: 1.1rem;
+     margin-bottom: 0.5rem;
+ }
+
+ .text-box span {
+     color: #007bff;
+     font-weight: bold;
+ }
+
+ .subtitle {
+     font-size: 1.1rem;
+     color: #555;
+     margin-bottom: 1rem;
+ }
+
+ .hh1 {
+     font-size: 2.2rem;
+     font-weight: 700;
+     margin-bottom: 0.5rem;
+ }
+
+ .highlight {
+     color: #ffb300;
+ }
+
+ .quote {
+     font-style: italic;
+     color: #888;
+     margin-top: 0.5rem;
+ }
+
+ /* About Section */
+ .text-wrapper {
+     background: #f5f7fa;
+     padding: 2.5rem 2rem;
+     margin: 2rem auto;
+     max-width: 900px;
+     border-radius: 1rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+ }
+
+ .title-line {
+     font-size: 1.3rem;
+     font-weight: 600;
+     margin-bottom: 0.7rem;
+ }
+
+ .highlight2 {
+     color: #007bff;
+ }
+
+ .cursor {
+     color: #ffb300;
+     animation: blink 1s steps(1) infinite;
+ }
+
+ @keyframes blink {
+     50% {
+         opacity: 0;
+     }
+ }
+
+ .description-line {
+     color: #444;
+     font-size: 1.05rem;
+ }
+
+ /* Projects Section */
+ .experience-intro {
+     padding: 2.5rem 2rem;
+     max-width: 1100px;
+     margin: 0 auto;
+ }
+
+ .myProjectText .hh2 {
+     font-size: 2rem;
+     margin-bottom: 1.5rem;
+     color: #007bff;
+     text-align: center;
+ }
+
+ .myProjects {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     justify-content: center;
+ }
+
+ .project {
+     background: #fff;
+     border-radius: 1rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+     transition: transform 0.2s, box-shadow 0.2s;
+     width: 300px;
+     min-height: 220px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .project:hover {
+     transform: translateY(-6px) scale(1.03);
+     box-shadow: 0 6px 24px rgba(0, 123, 255, 0.13);
+ }
+
+ .project-image {
+     width: 90%;
+     border-radius: 0.7rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+     display: block;
+     margin: 0 auto;
+ }
+
+ /* Tech Stack Section */
+ .techstack {
+     background: #fff;
+     padding: 2.5rem 2rem;
+     margin: 2rem auto;
+     max-width: 1100px;
+     border-radius: 1rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+ }
+
+ .techStackText .hh3 {
+     font-size: 2rem;
+     color: #007bff;
+     text-align: center;
+     margin-bottom: 1.5rem;
+ }
+
+ .techStacks {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2.5rem;
+     flex-wrap: wrap;
+ }
+
+ .tech-icon {
+     width: 60px;
+     height: 60px;
+     object-fit: contain;
+     transition: transform 0.2s;
+     filter: grayscale(0.2);
+ }
+
+ .tech-icon:hover {
+     transform: scale(1.15) rotate(-6deg);
+     filter: grayscale(0);
+ }
+
+ /* Contact Section */
+ .contact {
+     background: #f5f7fa;
+     padding: 2.5rem 2rem;
+     margin: 2rem auto 0 auto;
+     max-width: 900px;
+     border-radius: 1rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+ }
+
+ .contact-box-text .hh4 {
+     font-size: 2rem;
+     color: #007bff;
+     text-align: center;
+     margin-bottom: 1rem;
+ }
+
+ .contact-box-paragraph {
+     text-align: center;
+     margin-bottom: 1.5rem;
+ }
+
+ .mail-info {
+     color: #007bff;
+     text-decoration: none;
+     font-weight: 500;
+     transition: text-decoration 0.2s;
+ }
+
+ .mail-info:hover {
+     text-decoration: underline;
+ }
+
+ .social-media {
+     display: flex;
+     justify-content: center;
+     gap: 2rem;
+     margin-top: 1rem;
+ }
+
+ .social-media img {
+     width: 38px;
+     height: 38px;
+     border-radius: 50%;
+     background: #fff;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+     transition: transform 0.2s, box-shadow 0.2s;
+     object-fit: cover;
+ }
+
+ .social-media img:hover {
+     transform: scale(1.13) rotate(-8deg);
+     box-shadow: 0 6px 24px rgba(0, 123, 255, 0.13);
+ }
+
+ /* Responsive Design */
+ @media (max-width: 900px) {
+     .navbar {
+         flex-direction: column;
+         gap: 1rem;
+     }
+
+     .hero-intro {
+         flex-direction: column;
+         gap: 1.5rem;
+         padding: 2.5rem 1rem 1rem 1rem;
+     }
+
+     .myProjects {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .techStacks {
+         gap: 1.2rem;
+     }
+ }
+
+ @media (max-width: 600px) {
+     .navbar {
+         padding: 0.7rem 0.5rem;
+     }
+
+     .hero-intro {
+         padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+     }
+
+     .text-wrapper,
+     .techstack,
+     .contact {
+         padding: 1.2rem 0.5rem;
+     }
+
+     .project {
+         width: 95vw;
+         min-width: 0;
+     }
+
+     .tech-icon {
+         width: 40px;
+         height: 40px;
+     }
+ }
+
+ /* Font Awesome icon style (if you use them) */
+ i[class^="fa-"],
+ i[class*=" fa-"] {
+     color: #007bff;
+     font-size: 1.5rem;
+     vertical-align: middle;
+     margin-right: 0.5rem;
+ }
